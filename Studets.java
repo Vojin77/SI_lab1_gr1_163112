@@ -2,13 +2,13 @@ class Student {
 	String index;
 	String firstName;
 	String lastName;
-	List<Integer> labPoints = new Arraylist<Integer>();
+	List<Integer> labPoints = new ArrayList<Integer>();
 	//TODO constructor
 	public Student(String index, String firstName, String lastName){
-	this.index = index;
-	this.firstName = firstName;
-	this.lastName = lastName;
-	List<Integer> labPoints = new ArrayList<Integer>();
+		this.index = index;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		List<Integer> labPoints = new ArrayList<Integer>();
 	}
 	//TODO seters & getters
 	public String getIndex(){
@@ -36,7 +36,7 @@ class Student {
 		//TODO
 		double suma = 0;
 		for(int i: labPoints){
-		suma += i; }
+		suma += i;}
 		double prosek = suma/labPoints.size();
 		return prosek;
 	}
@@ -47,8 +47,4 @@ class Student {
 			return true;
 		else return false;
 	}
-}
-
-class Course{
-	List<Student> Studenti = new ArrayList<Student>;
 }
